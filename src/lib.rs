@@ -1,3 +1,4 @@
+#![allow(warnings)]
 mod r#arc;
 mod b_tree_map;
 mod b_tree_set;
@@ -10,6 +11,7 @@ mod linked_list;
 mod mutex;
 mod option;
 mod r#rc;
+mod ref_cell;
 mod r#result;
 mod rw_lock;
 mod string;
