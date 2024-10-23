@@ -1,5 +1,4 @@
 use crate::*;
-use std::sync::Arc;
 static STR: &str = "test";
 static NUM: i32 = 1;
 

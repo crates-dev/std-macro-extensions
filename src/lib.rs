@@ -17,3 +17,8 @@ mod rw_lock;
 mod string;
 mod r#vec;
 mod vec_deque;
+
+pub use b_tree_map::r#macro::*;
+pub use r#arc::r#macro::*;
+pub use std::collections::BTreeMap;
+pub use std::sync::Arc;

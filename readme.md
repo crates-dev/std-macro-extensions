@@ -29,29 +29,20 @@ use std_macro_extensions::*;
 
 fn main() {
     let value = arc!(5);
-    println!("Arc value: {}", value);
 }
 ```
 
-### Example: Using `vec!`
+### Example: Using `b_tree_map!`
 
 ```rust
 use std_macro_extensions::*;
 
 fn main() {
-    let numbers = vec![1, 2, 3, 4, 5];
-    println!("Numbers: {:?}", numbers);
-}
-```
-
-### Example: Using `map!`
-
-```rust
-use std_macro_extensions::*;
-
-fn main() {
-    let my_map = map!["key1" => "value1", "key2" => "value2"];
-    println!("Map: {:?}", my_map);
+    let empty_map: BTreeMap<i32, i32> = b_tree_map!();
+    let b_tree_map_a: BTreeMap<&str, &str> = b_tree_map!(
+        "a" => "a",
+        "b" => "b"
+    );
 }
 ```
 
