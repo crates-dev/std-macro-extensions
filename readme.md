@@ -12,14 +12,7 @@ A collection of macro extensions for Rust's standard library data structures, si
 
 ## Installation
 
-To use `std-macro-extensions`, add it to your `Cargo.toml`:
-
-```toml
-[dependencies]
-std-macro-extensions = "0.1.0"
-```
-
-To use `std-macro-extensions` run cmd:
+To install `std-macro-extensions` run cmd:
 
 ```sh
 cargo add std-macro-extensions
