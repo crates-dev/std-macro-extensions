@@ -63,7 +63,6 @@ fn main() {
 use std_macro_extensions::*;
 
 fn main() {
-    use std_macro_extensions::*;
     let empty_set: BTreeSet<i32> = b_tree_set!();
     let number_set: BTreeSet<i32> = b_tree_set!(1, 2, 3);
 }
