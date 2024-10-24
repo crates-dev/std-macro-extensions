@@ -22,7 +22,11 @@ pub use b_tree_map::r#macro::*;
 pub use b_tree_set::r#macro::*;
 pub use binary_heap::r#macro::*;
 pub use boxed::r#macro::*;
+pub use cell::r#macro::*;
+pub use hash_map::r#macro::*;
+pub use hash_set::r#macro::*;
 pub use r#arc::r#macro::*;
+
 pub use std::{
     boxed::Box,
     cell::Cell,

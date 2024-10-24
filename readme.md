@@ -98,6 +98,17 @@ fn main() {
 }
 ```
 
+### Example: Using `hash_set!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let my_set: HashSet<i32> = hash_set!();
+    let my_set: HashSet<i32> = hash_set!(1, 2, 3);
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
