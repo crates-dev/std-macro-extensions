@@ -21,4 +21,5 @@ mod vec_deque;
 pub use b_tree_map::r#macro::*;
 pub use r#arc::r#macro::*;
 pub use std::collections::BTreeMap;
+pub use std::collections::BTreeSet;
 pub use std::sync::Arc;
