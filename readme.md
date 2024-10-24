@@ -94,6 +94,7 @@ fn main() {
 use std_macro_extensions::*;
 
 fn main() {
+    let my_map: HashMap<&str, i32> = hash_map!();
     let my_map: HashMap<&str, i32> = hash_map!("a" => 1, "b" => 2);
 }
 ```
@@ -106,6 +107,17 @@ use std_macro_extensions::*;
 fn main() {
     let my_set: HashSet<i32> = hash_set!();
     let my_set: HashSet<i32> = hash_set!(1, 2, 3);
+}
+```
+
+### Example: Using `linked_list!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let my_list: LinkedList<i32> = linked_list!();
+    let my_list: LinkedList<i32> = linked_list!(1, 2, 3);
 }
 ```
 

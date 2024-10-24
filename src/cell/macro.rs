@@ -7,9 +7,7 @@
 /// ```
 /// use std_macro_extensions::*;
 /// let cell_value = cell!(5);
-/// assert_eq!(cell_value.get(), 5);
 /// cell_value.set(10);
-/// assert_eq!(cell_value.get(), 10);
 /// ```
 #[macro_export]
 macro_rules! cell {

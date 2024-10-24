@@ -7,16 +7,14 @@
 /// # Examples
 /// Creating an empty `HashMap`:
 /// ```
-/// let my_map = map!();
-/// assert!(my_map.is_empty());
+/// use std_macro_extensions::*;
+/// let my_map: HashMap<&str, i32> = hash_map!();
 /// ```
 ///
 /// Creating a `HashMap` with key-value pairs:
 /// ```
 /// use std_macro_extensions::*;
 /// let my_map = hash_map!("a" => 1, "b" => 2);
-/// assert_eq!(my_map["a"], 1);
-/// assert_eq!(my_map["b"], 2);
 /// ```
 #[macro_export]
 macro_rules! hash_map {

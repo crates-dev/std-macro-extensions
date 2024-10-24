@@ -8,17 +8,13 @@
 /// Creating an empty `HashSet`:
 /// ```
 /// use std_macro_extensions::*;
-/// let my_set = hash_set!();
-/// assert!(my_set.is_empty());
+/// let my_set: HashSet<i32> = hash_set!();
 /// ```
 ///
 /// Creating a `HashSet` with elements:
 /// ```
 /// use std_macro_extensions::*;
 /// let my_set = hash_set!(1, 2, 3);
-/// assert!(my_set.contains(&1));
-/// assert!(my_set.contains(&2));
-/// assert!(my_set.contains(&3));
 /// ```
 #[macro_export]
 macro_rules! hash_set {

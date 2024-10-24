@@ -25,11 +25,21 @@ pub use boxed::r#macro::*;
 pub use cell::r#macro::*;
 pub use hash_map::r#macro::*;
 pub use hash_set::r#macro::*;
+pub use linked_list::r#macro::*;
+pub use mutex::r#macro::*;
+pub use option::r#macro::*;
 pub use r#arc::r#macro::*;
+pub use rc::r#macro::*;
+pub use ref_cell::r#macro::*;
+pub use result::r#macro::*;
+pub use rw_lock::r#macro::*;
+pub use string::r#macro::*;
+pub use vec::r#macro::*;
+pub use vec_deque::r#macro::*;
 
 pub use std::{
     boxed::Box,
     cell::Cell,
-    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet},
-    sync::Arc,
+    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList},
+    sync::{Arc, Mutex},
 };
