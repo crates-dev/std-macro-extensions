@@ -74,8 +74,27 @@ fn main() {
 use std_macro_extensions::*;
 
 fn main() {
-    use std_macro_extensions::*;
     let boxed_value = boxed!(10);
+}
+```
+
+### Example: Using `cell!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let cell_value: Cell<i32> = cell!(5);
+}
+```
+
+### Example: Using `hash_map!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let my_map: HashMap<&str, i32> = hash_map!("a" => 1, "b" => 2);
 }
 ```
 
