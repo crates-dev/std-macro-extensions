@@ -41,5 +41,5 @@ pub use std::{
     boxed::Box,
     cell::Cell,
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList},
-    sync::{Arc, Mutex},
+    sync::{Arc, Mutex, MutexGuard},
 };
