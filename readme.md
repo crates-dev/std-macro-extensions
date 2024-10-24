@@ -57,6 +57,29 @@ fn main() {
 }
 ```
 
+### Example: Using `binary_heap!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    use std_macro_extensions::*;
+    let empty_set: BTreeSet<i32> = b_tree_set!();
+    let number_set: BTreeSet<i32> = b_tree_set!(1, 2, 3);
+}
+```
+
+### Example: Using `boxed!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    use std_macro_extensions::*;
+    let boxed_value = boxed!(10);
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
@@ -68,7 +91,7 @@ fn main() {
 - `list!`: Creates a `LinkedList<T>`.
 - `heap!`: Creates a `BinaryHeap<T>`.
 - `string!`: Creates a `String`.
-- `box!`: Creates a `Box<T>`.
+- `boxed!`: Creates a `Box<T>`.
 - `rc!`: Creates an `Rc<T>`.
 - `arc!`: Creates an `Arc<T>`.
 - `mutex!`: Creates a `Mutex<T>`.

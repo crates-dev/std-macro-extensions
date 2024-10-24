@@ -7,13 +7,12 @@
 ///
 /// ```rust
 /// use std_macro_extensions::*;
-/// let empty_map: BTreeMap<i32, i32> = b_tree_map!(); // Creates an empty BTreeMap
-///
+/// let empty_map: BTreeMap<i32, i32> = b_tree_map!();
 /// let populated_map = b_tree_map!(
 ///     "key1" => 1,
 ///     "key2" => 2,
 ///     "key3" => 3
-/// ); // Creates a BTreeMap with specified key-value pairs
+/// );
 /// ```
 ///
 /// `BTreeMap` is an ordered map that allows iteration over keys in their sorted order. This macro simplifies the
