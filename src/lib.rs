@@ -11,7 +11,6 @@ mod linked_list;
 mod mutex;
 mod r#rc;
 mod ref_cell;
-mod r#result;
 mod rw_lock;
 mod string;
 mod r#vec;
@@ -29,7 +28,6 @@ pub use mutex::r#macro::*;
 pub use r#arc::r#macro::*;
 pub use rc::r#macro::*;
 pub use ref_cell::r#macro::*;
-pub use result::r#macro::*;
 pub use rw_lock::r#macro::*;
 pub use string::r#macro::*;
 pub use vec::r#macro::*;
@@ -40,5 +38,5 @@ pub use std::{
     cell::{Cell, RefCell},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList},
     rc::Rc,
-    sync::{Arc, Mutex, MutexGuard},
+    sync::{Arc, Mutex, MutexGuard, RwLock},
 };
