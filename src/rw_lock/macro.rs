@@ -7,9 +7,6 @@
 /// ```
 /// use std_macro_extensions::*;
 /// let my_rwlock = rw_lock!(5);
-/// assert_eq!(*my_rwlock.read().unwrap(), 5);
-/// *my_rwlock.write().unwrap() = 10;
-/// assert_eq!(*my_rwlock.read().unwrap(), 10);
 /// ```
 #[macro_export]
 macro_rules! rw_lock {

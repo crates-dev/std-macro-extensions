@@ -174,10 +174,21 @@ fn main() {
 }
 ```
 
+### Example: Using `vector!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let empty_vector: Vec<i32> = vector!();
+    let numbers = vector!(1, 2, 3);
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
-- `vec!`: Creates a `Vec<T>`.
+- `vector!`: Creates a `Vec<T>`.
 - `map!`: Creates a `HashMap<K, V>`.
 - `set!`: Creates a `HashSet<T>`.
 - `b_tree_map!`: Creates a `BTreeMap<K, V>`.
