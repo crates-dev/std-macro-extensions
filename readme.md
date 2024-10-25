@@ -132,6 +132,16 @@ fn main() {
 }
 ```
 
+### Example: Using `rc!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let my_rc = rc!(5);
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.

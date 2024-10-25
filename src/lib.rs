@@ -9,7 +9,6 @@ mod hash_map;
 mod hash_set;
 mod linked_list;
 mod mutex;
-mod option;
 mod r#rc;
 mod ref_cell;
 mod r#result;
@@ -27,7 +26,6 @@ pub use hash_map::r#macro::*;
 pub use hash_set::r#macro::*;
 pub use linked_list::r#macro::*;
 pub use mutex::r#macro::*;
-pub use option::r#macro::*;
 pub use r#arc::r#macro::*;
 pub use rc::r#macro::*;
 pub use ref_cell::r#macro::*;
@@ -41,5 +39,6 @@ pub use std::{
     boxed::Box,
     cell::Cell,
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList},
+    rc::Rc,
     sync::{Arc, Mutex, MutexGuard},
 };
