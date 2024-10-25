@@ -13,8 +13,8 @@ mod r#rc;
 mod ref_cell;
 mod rw_lock;
 mod string;
-mod vec_deque;
 mod vector;
+mod vector_deque;
 
 pub use b_tree_map::r#macro::*;
 pub use b_tree_set::r#macro::*;
@@ -30,13 +30,13 @@ pub use rc::r#macro::*;
 pub use ref_cell::r#macro::*;
 pub use rw_lock::r#macro::*;
 pub use string::r#macro::*;
-pub use vec_deque::r#macro::*;
 pub use vector::r#macro::*;
+pub use vector_deque::r#macro::*;
 
 pub use std::{
     boxed::Box,
     cell::{Cell, RefCell},
-    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList},
+    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList, VecDeque},
     rc::Rc,
     string::String,
     sync::{Arc, Mutex, MutexGuard, RwLock},

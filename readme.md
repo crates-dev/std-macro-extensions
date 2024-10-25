@@ -185,6 +185,17 @@ fn main() {
 }
 ```
 
+### Example: Using `vector_deque!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let empty_deque: VecDeque<i32> = vector_deque!();
+    let numbers = vector_deque!(1, 2, 3);
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
@@ -203,6 +214,7 @@ fn main() {
 - `rw_lock!`: Creates a `RwLock<T>`.
 - `cell!`: Creates a `Cell<T>`.
 - `ref_cell!`: Creates a `RefCell<T>`.
+- `vector_deque!`: Creates a `VecDeque<T>`.
 
 ## License
 
