@@ -38,5 +38,6 @@ pub use std::{
     cell::{Cell, RefCell},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList},
     rc::Rc,
+    string::String,
     sync::{Arc, Mutex, MutexGuard, RwLock},
 };

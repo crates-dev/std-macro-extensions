@@ -163,6 +163,17 @@ fn main() {
 }
 ```
 
+### Example: Using `string!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let empty_string = string!();
+    let hello_string = string!("Hello");
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
