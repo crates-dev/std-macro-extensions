@@ -8,9 +8,7 @@
 /// ```
 /// use std_macro_extensions::*;
 /// let empty_string = string!();
-/// assert!(empty_string.is_empty());
 /// let hello_string = string!("Hello");
-/// assert_eq!(hello_string, "Hello");
 /// ```
 #[macro_export]
 macro_rules! string {

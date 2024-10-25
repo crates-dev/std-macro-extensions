@@ -40,4 +40,5 @@ pub use std::{
     rc::Rc,
     string::String,
     sync::{Arc, Mutex, MutexGuard, RwLock},
+    vec::Vec,
 };
