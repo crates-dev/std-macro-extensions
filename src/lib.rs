@@ -13,8 +13,8 @@ mod r#rc;
 mod ref_cell;
 mod rw_lock;
 mod string;
-mod r#vec;
 mod vec_deque;
+mod vector;
 
 pub use b_tree_map::r#macro::*;
 pub use b_tree_set::r#macro::*;
@@ -30,8 +30,8 @@ pub use rc::r#macro::*;
 pub use ref_cell::r#macro::*;
 pub use rw_lock::r#macro::*;
 pub use string::r#macro::*;
-pub use vec::r#macro::*;
 pub use vec_deque::r#macro::*;
+pub use vector::r#macro::*;
 
 pub use std::{
     boxed::Box,
