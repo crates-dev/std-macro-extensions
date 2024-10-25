@@ -153,6 +153,16 @@ fn main() {
 }
 ```
 
+### Example: Using `rw_lock!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    let my_rwlock = rw_lock!(5);
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
