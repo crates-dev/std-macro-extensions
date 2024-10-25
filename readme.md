@@ -142,6 +142,17 @@ fn main() {
 }
 ```
 
+### Example: Using `refcell!`
+
+```rust
+use std_macro_extensions::*;
+
+fn main() {
+    use std_macro_extensions::*;
+    let my_refcell = refcell!(5);
+}
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.

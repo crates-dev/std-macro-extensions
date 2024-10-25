@@ -37,7 +37,7 @@ pub use vec_deque::r#macro::*;
 
 pub use std::{
     boxed::Box,
-    cell::Cell,
+    cell::{Cell, RefCell},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList},
     rc::Rc,
     sync::{Arc, Mutex, MutexGuard},
