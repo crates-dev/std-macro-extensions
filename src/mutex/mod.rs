@@ -1,2 +1,2 @@
 pub(crate) mod cfg;
-pub mod r#macro;
+pub(crate) mod r#macro;
