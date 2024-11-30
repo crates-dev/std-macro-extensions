@@ -1,5 +1,10 @@
 # std-macro-extensions
 
+[![](https://img.shields.io/crates/v/std-macro-extensions.svg)](https://crates.io/crates/std-macro-extensions)
+[![](https://docs.rs/std-macro-extensions/badge.svg)](https://docs.rs/std-macro-extensions)
+[![](https://img.shields.io/crates/l/std-macro-extensions.svg)](./LICENSE)
+[![](https://github.com/ltpp-universe/std-macro-extensions/workflows/Rust/badge.svg)](https://github.com/ltpp-universe/std-macro-extensions/actions?query=workflow:Rust)
+
 [Official Documentation](https://docs.ltpp.vip/STD-MACRO-EXTENSIONS/)
 
 A collection of macro extensions for Rust's standard library data structures, simplifying the creation and manipulation of common collections such as `HashMap`, `Vec`, and more.
