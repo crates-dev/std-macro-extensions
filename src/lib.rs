@@ -35,8 +35,8 @@ pub use vector_deque::r#macro::*;
 
 pub use std::{
     any::*, array::*, ascii::*, borrow::*, boxed::*, cell::*, char::*, cmp::*, collections::*,
-    convert::*, env::*, error::*, ffi::*, fmt::*, fs::*, future::*, hash::*, hint::*, io::*,
-    iter::*, mem::*, net::*, num::*, ops::*, option::*, os::*, panic::*, path::*, pin::*,
-    prelude::*, process::*, ptr::*, rc::*, result::*, slice::*, str::*, string::*, sync::*,
-    task::*, thread::*, time::*, vec::*,
+    convert::*, env::*, ffi::*, fmt::*, fs::*, future::*, hash::*, hint::*, io::*, iter::*, mem::*,
+    net::*, num::*, ops::*, option::*, os::*, panic::*, path::*, pin::*, prelude::*, process::*,
+    ptr::*, rc::*, result::*, slice::*, str::*, string::*, sync::*, task::*, thread::*, time::*,
+    vec::*,
 };
