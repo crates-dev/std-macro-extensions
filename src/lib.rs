@@ -34,11 +34,9 @@ pub use vector::r#macro::*;
 pub use vector_deque::r#macro::*;
 
 pub use std::{
-    boxed::Box,
-    cell::{Cell, RefCell},
-    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList, VecDeque},
-    rc::Rc,
-    string::String,
-    sync::{Arc, Mutex, MutexGuard, RwLock},
-    vec::Vec,
+    any::*, array::*, ascii::*, borrow::*, boxed::*, cell::*, char::*, cmp::*, collections::*,
+    convert::*, env::*, error::*, ffi::*, fmt::*, fs::*, future::*, hash::*, hint::*, io::*,
+    iter::*, mem::*, net::*, num::*, ops::*, option::*, os::*, panic::*, path::*, pin::*,
+    prelude::*, process::*, ptr::*, rc::*, result::*, slice::*, str::*, string::*, sync::*,
+    task::*, thread::*, time::*, vec::*,
 };
