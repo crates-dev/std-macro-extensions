@@ -29,14 +29,51 @@ pub use r#arc::r#macro::*;
 pub use rc::r#macro::*;
 pub use ref_cell::r#macro::*;
 pub use rw_lock::r#macro::*;
+
+pub use std::{
+    any::*,
+    array::*,
+    ascii::*,
+    borrow::*,
+    boxed::*,
+    cell::*,
+    char::*,
+    cmp::*,
+    collections::*,
+    convert::*,
+    env::*,
+    error::Error as StdError,
+    ffi::*,
+    fmt::*,
+    fs::*,
+    future::*,
+    hash::*,
+    hint::*,
+    io::*,
+    iter::*,
+    mem::*,
+    net::*,
+    num::*,
+    ops::*,
+    option::*,
+    os::*,
+    panic::*,
+    path::*,
+    pin::*,
+    prelude::*,
+    process::{Output as StdProcessOutput, *},
+    ptr::*,
+    rc::*,
+    result::*,
+    slice::*,
+    str::*,
+    string::*,
+    sync::*,
+    task::*,
+    thread::*,
+    time::*,
+    vec::*,
+};
 pub use string::r#macro::*;
 pub use vector::r#macro::*;
 pub use vector_deque::r#macro::*;
-
-pub use std::{
-    any::*, array::*, ascii::*, borrow::*, boxed::*, cell::*, char::*, cmp::*, collections::*,
-    convert::*, env::*, ffi::*, fmt::*, fs::*, future::*, hash::*, hint::*, io::*, iter::*, mem::*,
-    net::*, num::*, ops::*, option::*, os::*, panic::*, path::*, pin::*, prelude::*, process::*,
-    ptr::*, rc::*, result::*, slice::*, str::*, string::*, sync::*, task::*, thread::*, time::*,
-    vec::*,
-};
