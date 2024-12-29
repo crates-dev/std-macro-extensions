@@ -1,6 +1,6 @@
 [package]
 name = "std-macro-extensions"
-version = "0.17.2"
+version = "0.17.3"
 edition = "2021"
 authors = ["ltpp-universe <root@ltpp.vip>"] 
 license = "MIT"
@@ -8,3 +8,9 @@ description = "A collection of macro extensions for Rust's standard library data
 keywords = ["standard", "macro", "extensions", "structures", "simplifying"]
 repository = "https://github.com/ltpp-universe/std-macro-extensions"
 categories = ["data-structures", "development-tools"]
+exclude = [
+    "target",
+    "Cargo.lock",
+    "sh",
+    ".github"
+]

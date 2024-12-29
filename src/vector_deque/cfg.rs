@@ -1,7 +1,6 @@
-use crate::*;
-
 #[test]
 fn test_vector_deque() {
+    use crate::*;
     let empty_deque: VecDeque<i32> = vector_deque!();
     assert!(empty_deque.is_empty());
     let numbers: VecDeque<i32> = vector_deque!(1, 2, 3);

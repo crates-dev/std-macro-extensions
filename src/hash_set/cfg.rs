@@ -1,7 +1,6 @@
-use crate::*;
-
 #[test]
 fn test_hash_set() {
+    use crate::*;
     let my_set: HashSet<i32> = hash_set!();
     assert!(my_set.is_empty());
     let my_set: HashSet<i32> = hash_set!(1, 2, 3);

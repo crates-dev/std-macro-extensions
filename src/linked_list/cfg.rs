@@ -1,6 +1,6 @@
-use crate::*;
-
+#[test]
 fn test_linked_test() {
+    use crate::*;
     let my_list: LinkedList<i32> = linked_list!();
     assert!(my_list.is_empty());
     let my_list: LinkedList<i32> = linked_list!(1, 2, 3);
