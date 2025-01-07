@@ -201,6 +201,13 @@ fn main() {
 }
 ```
 
+### Example: Using `join_paths!`
+
+```rust
+let combined_path: String = join_paths!("/home/", "/user/", "/documents", "file.txt");
+let another_path: String = join_paths!("C:/", "/Program Files", "App");
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
@@ -220,6 +227,7 @@ fn main() {
 - `cell!`: Creates a `Cell<T>`.
 - `ref_cell!`: Creates a `RefCell<T>`.
 - `vector_deque!`: Creates a `VecDeque<T>`.
+- `join_paths!`: Combines multiple paths into a single valid path, handling overlapping slashes.
 
 ## License
 
