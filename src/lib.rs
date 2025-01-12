@@ -34,8 +34,8 @@ pub use rw_lock::r#macro::*;
 
 pub use std::{
     any::*, array::*, ascii::*, borrow::*, boxed::*, cell::*, char::*, cmp::*, collections::*,
-    convert::*, iter::*, mem::*, net::*, num::*, ops::*, option::*, os::*, panic::*, path::*,
-    pin::*, ptr::*, rc::*, result::*, slice::*, str::*, string::*, sync::*, vec::*,
+    convert::*, future::*, iter::*, mem::*, net::*, num::*, ops::*, option::*, os::*, panic::*,
+    path::*, pin::*, ptr::*, rc::*, result::*, slice::*, str::*, string::*, sync::*, vec::*,
 };
 pub use string::r#macro::*;
 pub use vector::r#macro::*;
