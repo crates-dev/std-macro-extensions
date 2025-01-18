@@ -31,13 +31,16 @@ pub use r#arc::r#macro::*;
 pub use rc::r#macro::*;
 pub use ref_cell::r#macro::*;
 pub use rw_lock::r#macro::*;
-
-pub use std::{
-    any::*, array::*, ascii::*, borrow::*, boxed::*, cell::*, char::*, cmp::*, collections::*,
-    convert::*, future::*, iter::*, mem::*, net::*, num::*, ops::*, option::*, os::*, panic::*,
-    path::*, pin::*, ptr::*, rc::*, result::*, slice::*, str::*, string::*, sync::*, thread::*,
-    time::*, vec::*,
-};
 pub use string::r#macro::*;
 pub use vector::r#macro::*;
 pub use vector_deque::r#macro::*;
+
+pub use std::{
+    boxed::Box,
+    cell::{Cell, RefCell},
+    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList, VecDeque},
+    path::PathBuf,
+    rc::Rc,
+    sync::Arc,
+    sync::{Mutex, MutexGuard, RwLock},
+};
