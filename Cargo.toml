@@ -1,6 +1,6 @@
 [package]
 name = "std-macro-extensions"
-version = "0.20.2"
+version = "0.20.3"
 edition = "2021"
 authors = ["ltpp-universe <root@ltpp.vip>"] 
 license = "MIT"
@@ -16,11 +16,14 @@ exclude = [
 ]
 
 [profile.dev]
-incremental = true
+incremental = false
 opt-level = 3
 lto = true
 panic = "abort"
 debug = false
+codegen-units = 1
+strip = "debuginfo"
+backtrace = "off"
 
 [profile.release]
 incremental = false
