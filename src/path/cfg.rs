@@ -1,3 +1,4 @@
+#[test]
 fn test() {
     use crate::*;
     let combined_path: String = join_paths!("/home/", "/user/", "/documents", "file.txt");
