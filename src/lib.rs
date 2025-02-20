@@ -16,7 +16,8 @@ pub(crate) mod string;
 pub(crate) mod vector;
 pub(crate) mod vector_deque;
 
-pub use std::{
+#[cfg(test)]
+pub(crate) use std::{
     boxed::Box,
     cell::{Cell, RefCell},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList, VecDeque},
