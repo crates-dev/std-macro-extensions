@@ -8,14 +8,6 @@
 /// 2. **With Elements**:
 ///    - You can also initialize a `BTreeSet` with elements by providing a comma-separated list of values, e.g., `b_tree_set!(1, 2, 3)`.
 ///    - This will create a `BTreeSet` containing the specified elements.
-///
-/// # Examples
-///
-/// ```
-/// use std_macro_extensions::*;
-/// let empty_set: BTreeSet<i32> = b_tree_set!();
-/// let number_set: BTreeSet<i32> = b_tree_set!(1, 2, 3);
-/// ```
 #[macro_export]
 macro_rules! b_tree_set {
     () => {

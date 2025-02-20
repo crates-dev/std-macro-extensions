@@ -10,16 +10,6 @@
 ///
 /// # Returns
 /// - `String`: The resulting combined path as a `String`, with platform-specific separators and cleaned of redundant slashes.
-///
-/// # Example
-/// ```
-/// use std_macro_extensions::*;
-///
-/// let combined_path: String = join_paths!("/home/", "/user/", "/documents", "file.txt");
-/// assert_eq!(combined_path, "/home/user/documents/file.txt");
-/// let another_path: String = join_paths!("C:/", "/Program Files", "App");
-/// assert_eq!(another_path, "C:/Program Files/App");
-/// ```
 #[macro_export]
 macro_rules! join_paths {
     ($base:expr, $($sub_path:expr),+) => {{

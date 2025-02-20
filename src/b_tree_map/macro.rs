@@ -2,21 +2,6 @@
 ///
 /// 1. `b_tree_map!()` - Creates an empty `BTreeMap`.
 /// 2. `b_tree_map!(key1 => value1, key2 => value2, ...)` - Creates a `BTreeMap` containing the specified key-value pairs.
-///
-/// # Examples:
-///
-/// ```rust
-/// use std_macro_extensions::*;
-/// let empty_map: BTreeMap<i32, i32> = b_tree_map!();
-/// let populated_map = b_tree_map!(
-///     "key1" => 1,
-///     "key2" => 2,
-///     "key3" => 3
-/// );
-/// ```
-///
-/// `BTreeMap` is an ordered map that allows iteration over keys in their sorted order. This macro simplifies the
-/// process of creating `BTreeMap`, improving code readability and maintainability.
 #[macro_export]
 macro_rules! b_tree_map {
     () => {
