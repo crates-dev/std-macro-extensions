@@ -5,7 +5,7 @@
 [![](https://img.shields.io/crates/v/std-macro-extensions.svg)](https://crates.io/crates/std-macro-extensions)
 [![](https://img.shields.io/crates/d/std-macro-extensions.svg)](https://img.shields.io/crates/d/std-macro-extensions.svg)
 [![](https://docs.rs/std-macro-extensions/badge.svg)](https://docs.rs/std-macro-extensions)
-[![](https://github.com/ltpp-universe/std-macro-extensions/workflows/Rust/badge.svg)](https://github.com/ltpp-universe/std-macro-extensions/actions?query=workflow:Rust)
+[![](https://github.com/eastspire/std-macro-extensions/workflows/Rust/badge.svg)](https://github.com/eastspire/std-macro-extensions/actions?query=workflow:Rust)
 [![](https://img.shields.io/crates/l/std-macro-extensions.svg)](./LICENSE)
 
 </center>
@@ -244,4 +244,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Contact
 
-For any inquiries, please reach out to the author at [ltpp-universe <root@ltpp.vip>](mailto:root@ltpp.vip).
+For any inquiries, please reach out to the author at [eastspire <root@ltpp.vip>](mailto:root@ltpp.vip).
