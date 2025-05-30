@@ -8,9 +8,8 @@
 #[macro_export]
 macro_rules! cout {
     ($($args: tt)*) => {
-        use std::io::{self, Write};
-        print!($($args)*);
-        let _ = io::stdout().flush();
+        ::std::print!($($args)*);
+        let _ = ::std::io::Write::flush(&mut ::std::io::stdout());
     };
 }
 
@@ -24,7 +23,7 @@ macro_rules! cout {
 #[macro_export]
 macro_rules! endl {
     () => {{
-        cout!("\n");
+        $crate::cout!("\n");
     }};
 }
 
@@ -38,7 +37,7 @@ macro_rules! endl {
 #[macro_export]
 macro_rules! cout_endl {
     ($($args:tt)*) => {
-        cout!($($args)*);
-        endl!();
+        $crate::cout!($($args)*);
+        $crate::endl!();
     };
 }
