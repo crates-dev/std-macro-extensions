@@ -1,12 +1,12 @@
-/// Invoke a function with a primary array argument and optional additional arguments.
+/// Execute a synchronous function with given arguments.
 ///
 /// # Parameters
-/// - `path`: The path to the function to invoke.
-/// - `array`: The primary argument, typically a slice or vector.
-/// - `arg`: (Optional) Additional arguments passed to the function.
+/// - `$path`: The function path.
+/// - `$array`: The primary argument (e.g. input array or struct).
+/// - `$arg`...: Optional trailing arguments.
 ///
 /// # Returns
-/// - The return value of the invoked function.
+/// - The result of the function call.
 #[macro_export]
 macro_rules! execute {
     ($path: path, $array: expr) => {
@@ -14,5 +14,28 @@ macro_rules! execute {
     };
     ($path: path, $array: expr, $($arg: expr), *) => {
         $path($array, $($arg), *)
+    };
+}
+
+/// Execute an asynchronous function and return a future.
+///
+/// # Parameters
+/// - `$path`: The async function path.
+/// - `$array`: The primary argument (e.g. input array or struct).
+/// - `$arg`...: Optional trailing arguments.
+///
+/// # Returns
+/// - A future that must be `.await`ed.
+#[macro_export]
+macro_rules! execute_async {
+    ($path: path, $array: expr) => {
+        async {
+            $path($array).await
+        }
+    };
+    ($path: path, $array: expr, $($arg: expr),*) => {
+        async {
+            $path($array, $($arg),*).await
+        }
     };
 }

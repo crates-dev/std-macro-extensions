@@ -269,6 +269,17 @@ let total_with_offset: i32 = execute!(add_offset, &nums, 10);
 assert_eq!(total_with_offset, 36);
 ```
 
+### Example: Using `execute_async!`
+
+```rust
+let data: Vec<i32> = vec![1, 2, 3];
+async fn async_func(data: &[i32], offset: i32) -> i32 {
+    data.iter().map(|x| x + offset).sum()
+}
+let res: i32 = execute_async!(async_func, &data, 1).await;
+assert_eq!(res, 9);
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
@@ -295,6 +306,7 @@ assert_eq!(total_with_offset, 36);
 - `endl!`: Prints a newline character to the standard output.
 - `cout_endl!`: Prints formatted output followed by a newline character to the standard output.
 - `execute!`: Executes a function with the provided arguments.
+- `execute_async!`: Executes an asynchronous function with the provided arguments.
 
 ## License
 
