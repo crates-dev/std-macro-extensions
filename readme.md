@@ -213,6 +213,62 @@ let combined_path: String = join_paths!("/home/", "/user/", "/documents", "file.
 let another_path: String = join_paths!("C:/", "/Program Files", "App");
 ```
 
+### Example: Using `cin!`
+
+```rust
+let input: String = cin!();
+println!("You typed: {}", input);
+```
+
+### Example: Using `cin_parse!`
+
+```rust
+let input: &str = "1 2 3";
+let numbers: Vec<i32> = cin_parse!(input, Vec<i32>);
+assert_eq!(numbers, vec![1, 2, 3]);
+let single_input: &str = "12";
+let number: i32 = cin_parse!(single_input, i32);
+assert_eq!(number, 12);
+```
+
+### Example: Using `cout!`
+
+```rust
+let name: &str = "Alice";
+let age: i32 = 30;
+cout!("Name: {}, Age: {}\n", name, age);
+```
+
+### Example: Using `endl!`
+
+```rust
+endl!();
+```
+
+### Example: Using `cout_endl!`
+
+```rust
+let name: &str = "Alice";
+let age: i32 = 30;
+cout_endl!("Name: {}, Age: {}\n", name, age);
+```
+
+### Example: Using `execute!`
+
+```rust
+fn sum(data: &[i32]) -> i32 {
+    data.iter().sum()
+}
+fn add_offset(data: &[i32], offset: i32) -> i32 {
+    data.iter().map(|x| x + offset).sum()
+}
+let nums: Vec<i32> = vec![1, 2, 3];
+let total: i32 = execute!(sum, &nums);
+assert_eq!(total, 6);
+let total_with_offset: i32 = execute!(add_offset, &nums, 10);
+assert_eq!(total_with_offset, 36);
+```
+
 ## Available Macros
 
 - `arc!`: Creates an `Arc<T>`.
@@ -233,6 +289,12 @@ let another_path: String = join_paths!("C:/", "/Program Files", "App");
 - `ref_cell!`: Creates a `RefCell<T>`.
 - `vector_deque!`: Creates a `VecDeque<T>`.
 - `join_paths!`: Combines multiple paths into a single valid path, handling overlapping slashes.
+- `cin!`: Reads a line of input from the standard input.
+- `cin_parse!`: Parses input into a specified type.
+- `cout!`: Prints formatted output to the standard output.
+- `endl!`: Prints a newline character to the standard output.
+- `cout_endl!`: Prints formatted output followed by a newline character to the standard output.
+- `execute!`: Executes a function with the provided arguments.
 
 ## License
 

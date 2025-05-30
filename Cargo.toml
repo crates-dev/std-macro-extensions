@@ -1,6 +1,6 @@
 [package]
 name = "std-macro-extensions"
-version = "0.23.2"
+version = "0.24.0"
 edition = "2024"
 authors = ["root@ltpp.vip"] 
 license = "MIT"
