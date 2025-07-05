@@ -1,8 +1,8 @@
 [package]
 name = "std-macro-extensions"
-version = "0.25.1"
+version = "0.25.2"
 edition = "2024"
-authors = ["root@ltpp.vip"] 
+authors = ["root@ltpp.vip"]
 license = "MIT"
 description = "A collection of macro extensions for Rust's standard library data structures, simplifying the creation and manipulation of common collections such as HashMap, Vec, and more."
 keywords = ["standard", "macro", "extensions", "structures", "simplifying"]
@@ -16,7 +16,7 @@ exclude = [
 ]
 
 [dev-dependencies]
-tokio = { version = "1.45.1", features = ["full"] }
+tokio = { version = "1.46.1", features = ["full"] }
 
 [profile.dev]
 incremental = false
