@@ -1,8 +1,13 @@
-/// Creates a new `HashMap` instance.
+/// Creates a new hash map instance.
 ///
-/// This macro can be used in two forms:
-/// - Without arguments, it creates an empty `HashMap`.
-/// - With key-value pairs, it creates a `HashMap` and inserts the provided pairs into it.
+/// # Arguments
+///
+/// - `K` - The type of keys in the map.
+/// - `V` - The type of values in the map.
+///
+/// # Returns
+///
+/// - `HashMap<K, V>` - A new hash map containing the given key-value pairs.
 #[macro_export]
 macro_rules! hash_map {
     () => {

@@ -12,7 +12,7 @@
 
 [Official Documentation](https://docs.ltpp.vip/STD-MACRO-EXTENSIONS/)
 
-A collection of macro extensions for Rust's standard library data structures, simplifying the creation and manipulation of common collections such as `HashMap`, `Vec`, and more.
+> A collection of macro extensions for Rust's standard library data structures, simplifying the creation and manipulation of common collections such as HashMap, Vec, and more.
 
 ## Features
 

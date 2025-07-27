@@ -1,8 +1,12 @@
-/// Creates a new `Vec` instance.
+/// Creates a new vector instance.
 ///
-/// This macro can be used in two forms:
-/// - Without arguments, it creates an empty `Vec`.
-/// - With elements, it creates a `Vec` initialized with the provided elements.
+/// # Arguments
+///
+/// - `expr` - The expression(s) to initialize the vector.
+///
+/// # Returns
+///
+/// - `Vec<T>` - A new vector containing the given elements.
 #[macro_export]
 macro_rules! vector {
     () => {

@@ -1,10 +1,12 @@
-/// Arc macro
+/// Creates a new atomic reference counted pointer.
 ///
-/// # Parameters
-/// - `T`: The data to be wrapped in an `Arc`.
+/// # Arguments
+///
+/// - `T` - The type of value to be reference counted.
 ///
 /// # Returns
-/// - An instance of `Arc<T>`.
+///
+/// - `Arc<T>` - A thread-safe reference-counting pointer.
 #[macro_export]
 macro_rules! arc {
     ($val:expr) => {

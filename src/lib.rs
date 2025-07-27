@@ -1,3 +1,9 @@
+//! std-macro-extensions
+//!
+//! A collection of macro extensions for Rust's standard library
+//! data structures, simplifying the creation and manipulation of
+//! common collections such as HashMap, Vec, and more.
+
 pub(crate) mod r#arc;
 pub(crate) mod b_tree_map;
 pub(crate) mod b_tree_set;
