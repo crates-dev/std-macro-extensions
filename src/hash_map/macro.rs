@@ -2,8 +2,7 @@
 ///
 /// # Arguments
 ///
-/// - `K` - The type of keys in the map.
-/// - `V` - The type of values in the map.
+/// - `expr` - The key-value pairs to initialize the hash map.
 ///
 /// # Returns
 ///

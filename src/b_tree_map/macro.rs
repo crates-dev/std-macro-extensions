@@ -1,7 +1,12 @@
-/// A macro to create a new `BTreeMap`, providing two usage options:
+/// Creates a new BTreeMap instance.
 ///
-/// 1. `b_tree_map!()` - Creates an empty `BTreeMap`.
-/// 2. `b_tree_map!(key1 => value1, key2 => value2, ...)` - Creates a `BTreeMap` containing the specified key-value pairs.
+/// # Arguments
+///
+/// - `expr` - The key-value pairs to initialize the BTreeMap.
+///
+/// # Returns
+///
+/// - `BTreeMap<K, V>` - A new BTreeMap containing the given key-value pairs.
 #[macro_export]
 macro_rules! b_tree_map {
     () => {

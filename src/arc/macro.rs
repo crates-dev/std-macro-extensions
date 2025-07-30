@@ -2,7 +2,7 @@
 ///
 /// # Arguments
 ///
-/// - `T` - The type of value to be reference counted.
+/// - `expr` - The value to be reference counted.
 ///
 /// # Returns
 ///

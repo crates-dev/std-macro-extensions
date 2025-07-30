@@ -1,13 +1,12 @@
-/// Creates a new `BTreeSet<T>`.
+/// Creates a new BTreeSet instance.
 ///
-/// This macro provides two ways to initialize a `BTreeSet`:
+/// # Arguments
 ///
-/// 1. **Empty Set**:
-///    - Calling `b_tree_set!()` creates an empty `BTreeSet`.
+/// - `expr` - The elements to initialize the BTreeSet.
 ///
-/// 2. **With Elements**:
-///    - You can also initialize a `BTreeSet` with elements by providing a comma-separated list of values, e.g., `b_tree_set!(1, 2, 3)`.
-///    - This will create a `BTreeSet` containing the specified elements.
+/// # Returns
+///
+/// - `BTreeSet<T>` - A new BTreeSet containing the given elements.
 #[macro_export]
 macro_rules! b_tree_set {
     () => {
