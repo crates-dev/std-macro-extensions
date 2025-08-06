@@ -2,7 +2,7 @@
 ///
 /// # Parameters
 /// - `$path`: The function path.
-/// - `$array`: The primary argument (e.g. input array or struct).
+/// - `$array`: The primary argument.
 /// - `$arg`...: Optional trailing arguments.
 ///
 /// # Returns
@@ -21,7 +21,7 @@ macro_rules! execute {
 ///
 /// # Parameters
 /// - `$path`: The async function path.
-/// - `$array`: The primary argument (e.g. input array or struct).
+/// - `$array`: The primary argument.
 /// - `$arg`...: Optional trailing arguments.
 ///
 /// # Returns
