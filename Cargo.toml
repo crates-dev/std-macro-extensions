@@ -1,6 +1,6 @@
 [package]
 name = "std-macro-extensions"
-version = "0.26.7"
+version = "0.26.8"
 readme = "README.md"
 edition = "2024"
 authors = ["root@ltpp.vip"]
@@ -9,12 +9,7 @@ description = """A collection of macro extensions for Rust's standard library da
 keywords = ["standard", "macro", "extensions", "structures", "simplifying"]
 repository = "https://github.com/crates-dev/std-macro-extensions"
 categories = ["data-structures", "development-tools"]
-exclude = [
-    "target",
-    "Cargo.lock",
-    "sh",
-    ".github"
-]
+exclude = ["target", "Cargo.lock", "sh", ".github"]
 
 [dev-dependencies]
 tokio = { version = "1.48.0", features = ["full"] }
