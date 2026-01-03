@@ -1,6 +1,6 @@
 [package]
 name = "std-macro-extensions"
-version = "0.26.8"
+version = "0.26.9"
 readme = "README.md"
 edition = "2024"
 authors = ["root@ltpp.vip"]

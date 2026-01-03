@@ -25,7 +25,7 @@ macro_rules! cin {
 macro_rules! cin_parse {
     ($input: expr, Vec<$type: ty>) => {{
         let mut res: Vec<$type> = Vec::<$type>::new();
-        for token in $input.trim().split_whitespace() {
+        for token in $input.split_whitespace() {
             if let Ok(num) = token.parse::<$type>() {
                 res.push(num);
             }

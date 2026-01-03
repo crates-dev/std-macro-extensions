@@ -3,7 +3,7 @@ fn test_arc_num() {
     use crate::*;
     const NUM: i32 = 1;
     let num_arc: Arc<i32> = arc!(NUM);
-    let num: i32 = num_arc.as_ref().clone();
+    let num: i32 = *num_arc.as_ref();
     assert_eq!(num_arc, Arc::new(NUM));
     assert_eq!(num, NUM)
 }
