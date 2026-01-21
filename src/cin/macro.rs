@@ -5,9 +5,8 @@
 #[macro_export]
 macro_rules! cin {
     () => {{
-        use std::io::{self};
         let mut input: String = String::new();
-        let _ = io::stdin().read_line(&mut input);
+        let _ = std::io::stdin().read_line(&mut input);
         input
     }};
 }
