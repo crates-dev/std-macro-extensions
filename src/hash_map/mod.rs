@@ -1,4 +1,3 @@
-pub(crate) mod r#macro;
-
+mod r#macro;
 #[cfg(test)]
 mod test;
