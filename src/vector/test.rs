@@ -1,6 +1,7 @@
+use crate::*;
+
 #[test]
 fn test_vec() {
-    use crate::*;
     let empty_vector: Vec<i32> = vector!();
     assert!(empty_vector.is_empty());
     let numbers: Vec<i32> = vector!(1, 2, 3);

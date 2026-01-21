@@ -1,6 +1,7 @@
+use crate::*;
+
 #[test]
 fn test_execute() {
-    use crate::*;
     fn sum(data: &[i32]) -> i32 {
         data.iter().sum()
     }
@@ -17,7 +18,6 @@ fn test_execute() {
 #[cfg(test)]
 #[tokio::test]
 async fn test_execute_async() {
-    use crate::*;
     let data: Vec<i32> = vec![1, 2, 3];
     async fn async_func(data: &[i32], offset: i32) -> i32 {
         data.iter().map(|x| x + offset).sum()

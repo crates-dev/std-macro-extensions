@@ -1,6 +1,7 @@
+use crate::*;
+
 #[test]
 fn test_cin_parse() {
-    use crate::*;
     let input: &str = "1 2 3";
     let numbers: Vec<i32> = cin_parse!(input, Vec<i32>);
     assert_eq!(numbers, vec![1, 2, 3]);
