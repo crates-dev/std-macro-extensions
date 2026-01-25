@@ -10,7 +10,9 @@
 
 </center>
 
-[Official Documentation](https://docs.ltpp.vip/STD-MACRO-EXTENSIONS/)
+[Official Documentation](https://docs.ltpp.vip/std-macro-extensions/)
+
+[Api Docs](https://docs.rs/std-macro-extensions/latest/)
 
 > A collection of macro extensions for Rust's standard library data structures, simplifying the creation and manipulation of common collections such as HashMap, Vec, and more.
 
