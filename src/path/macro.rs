@@ -13,7 +13,7 @@
 #[macro_export]
 macro_rules! join_paths {
     ($base:expr, $($sub_path:expr),+) => {{
-        let mut path = PathBuf::from($base.trim_end_matches(['/', '\\'].as_ref()));
+        let mut path = std::path::PathBuf::from($base.trim_end_matches(['/', '\\'].as_ref()));
         if cfg!(target_os = "windows") {
             if path.is_dir() && path.to_string_lossy().ends_with(":") {
                 path.push("/");

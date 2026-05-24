@@ -24,14 +24,3 @@ mod rw_lock;
 mod string;
 mod vector;
 mod vector_deque;
-
-#[cfg(test)]
-use std::{
-    boxed::Box,
-    cell::{Cell, RefCell},
-    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, LinkedList, VecDeque},
-    path::PathBuf,
-    rc::Rc,
-    sync::Arc,
-    sync::{Mutex, MutexGuard, RwLock},
-};
